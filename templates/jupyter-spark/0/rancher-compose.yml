@@ -10,10 +10,10 @@
       label: Public port
       required: true
     - variable: USER
-      label: MySQL Database
+      label: User
       required: true
       type: string
     - variable: PASSWORD
-      label: MySQL User
+      label: Password
       required: true
       type: password
