@@ -1,0 +1,5 @@
+name: Mautic
+description: |
+    Marketing platform
+version: v0.3.2-rancher1
+category: Social

@@ -1,0 +1,8 @@
+name: Jupyter - Spark 
+description: |
+  Jupyter Notebook Python, Scala, R, Spark, Mesos Stack 
+version: 0.1
+category: data Science
+maintainer: eltitopera
+license: Apache license
+projectURL: http://github.com/eltitopera/rancher-catalog

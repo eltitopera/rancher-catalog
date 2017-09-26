@@ -1,0 +1,19 @@
+.catalog:
+  name: Jupyter - Spark 
+  version: 0.1
+  description: Jupyter Notebook Python, Scala, R, Spark, Mesos Stack 
+  uuid: Jupyter-Spark-0
+  minimum_rancher_version: v0.46.0
+  questions: 
+    - variable: PORT
+      default: 8888
+      label: Public port
+      required: true
+    - variable: USER
+      label: MySQL Database
+      required: true
+      type: string
+    - variable: PASSWORD
+      label: MySQL User
+      required: true
+      type: password

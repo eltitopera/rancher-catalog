@@ -1,0 +1,30 @@
+.catalog:
+  name: "Mautic" 
+  version: "0.1" 
+  description: "Mautic software" 
+  uuid: "Mautic-0"
+  minimum_rancher_version: v0.46.0
+  questions:
+    - variable: MYSQL_ROOT_PASSWORD
+      default: eyx2vRyqx6EvV2U2
+      label: MySQL root password
+      required: true
+      type: password
+    - variable: MYSQL_DATABASE
+      default: mautic
+      label: MySQL Database
+      required: true
+      type: string
+    - variable: MYSQL_USER
+      default: mautic
+      label: MySQL User
+      required: true
+      type: string
+    - variable: MYSQL_PASSWORD
+      default: RRNv2tXQR96D3JEC
+      label: MySQL Pass
+      required: true
+      type: password
+    - variable: PATH_CONF_FILE
+      label: Path file config nginx
+      required: true  

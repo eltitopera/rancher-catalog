@@ -1,0 +1,16 @@
+version: "2"
+services:
+  mautic:
+    image: jupyter/all-spark-notebook
+    ports:
+      - "{PORT}:80"
+    environment:
+      PASSWORD: ${PASSWORD}
+      name: ${USER}
+
+#    volumes:
+#      - db_data_mautic:/var/lib/mysql
+#
+#volumes:
+#  db_data_mautic:
+#      driver: rancher-nfs 
