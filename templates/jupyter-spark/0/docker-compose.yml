@@ -3,7 +3,7 @@ services:
   jupyter:
     image: jupyter/all-spark-notebook
     ports:
-      - ${PORT}":8888"
+      - ${PORT}:8888
     environment:
       PASSWORD: ${PASSWORD}
       name: ${USER}
