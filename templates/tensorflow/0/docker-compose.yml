@@ -1,0 +1,17 @@
+version: "2"
+services:
+  jupyter:
+    image: jupyter/tensorflow-notebook
+    ports:
+      - ${PORT}:8888
+    environment:
+      GEN_CERT: "yes"
+      GRANT_SUDO: "yes"
+    command:
+      start-notebook.sh --NotebookApp.token='${TOKEN}' #--NotebookApp.keyfile=/etc/ssl/notebook/notebook.key --NotebookApp.certfile=/etc/ssl/notebook/notebook.crt
+    volumes:
+      - data:/home/jovyan
+
+volumes:
+  data:
+      driver: rancher-nfs 
