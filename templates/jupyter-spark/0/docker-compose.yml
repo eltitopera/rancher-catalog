@@ -8,12 +8,10 @@ services:
       GEN_CERT: "yes"
       GRANT_SUDO: "yes"
     command:
-       start-notebook.sh --NotebookApp.token='${PASSWORD}' 
-      
+       start-notebook.sh --NotebookApp.token='${TOKEN}' 
+    volumes:
+      - data:/home/jovyan
 
-#    volumes:
-#      - db_data_mautic:/var/lib/mysql
-#
-#volumes:
-#  db_data_mautic:
-#      driver: rancher-nfs 
+volumes:
+  data:
+      driver: rancher-nfs 
