@@ -8,7 +8,10 @@ services:
       GEN_CERT: "yes"
       GRANT_SUDO: "yes"
     command:
-      start-notebook.sh --NotebookApp.token='${TOKEN}' #--NotebookApp.keyfile=/etc/ssl/notebook/notebook.key --NotebookApp.certfile=/etc/ssl/notebook/notebook.crt
+      cd /etc/ssl/
+      mkdir notebook
+      openssl req -x509 -newkey rsa:2048 -sha256 -nodes -keyout /etc/ssl/notebook/notebook.key -out /etc/ssl/notebook/notebook.crt -subj '/CN=eltitopera.zapto.org' -days 3650
+      start-notebook.sh --NotebookApp.token='${TOKEN}' --NotebookApp.keyfile=/etc/ssl/notebook/notebook.key #--NotebookApp.certfile=/etc/ssl/notebook/notebook.crt
     volumes:
       - data:/home/jovyan
 
