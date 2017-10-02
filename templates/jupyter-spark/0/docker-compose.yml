@@ -8,8 +8,7 @@ services:
       GEN_CERT: "yes"
       GRANT_SUDO: "yes"
     command:
-       start-notebook.sh
-       --NotebookApp.token="${PASSWORD}" //password: hola
+       start-notebook.sh --NotebookApp.token='${PASSWORD}' 
       
 
 #    volumes:
