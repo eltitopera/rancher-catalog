@@ -9,7 +9,7 @@ services:
       GRANT_SUDO: "yes"
     command:
        start-notebook.sh
-       --NotebookApp.password='sha1:29b153b69808:47e29b2173113ba478368371cc7efef05bc5068a' //password: hola
+       --NotebookApp.token=${PASSWORD} //password: hola
       
 
 #    volumes:
