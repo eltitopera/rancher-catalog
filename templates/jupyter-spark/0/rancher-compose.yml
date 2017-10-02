@@ -9,11 +9,7 @@
       default: 8888
       label: Public port
       required: true
-    - variable: USER
-      label: User
-      required: true
-      type: string
-    - variable: PASSWORD
-      label: Password
+    - variable: TOKEN
+      label: TOKEN
       required: true
       type: password
