@@ -6,6 +6,6 @@
   minimum_rancher_version: v0.46.0
   questions: 
     - variable: PORT
-      default: 8888
+      default: 8080
       label: Public port
       required: true
