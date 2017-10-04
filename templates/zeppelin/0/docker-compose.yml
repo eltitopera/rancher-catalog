@@ -1,0 +1,12 @@
+version: "2"
+services:
+  jupyter:
+    image: apache/zeppelin
+    ports:
+      - ${PORT}:8080
+    volumes:
+      - data:/notebook
+
+volumes:
+  data:
+      driver: rancher-nfs 
