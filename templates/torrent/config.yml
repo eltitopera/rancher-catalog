@@ -1,0 +1,8 @@
+name: Cloud torrent 
+description: |
+  Cloud Torrent: a self-hosted remote torrent client 
+version: 0.1
+category: download
+maintainer: eltitopera 
+license: Apache license
+projectURL: http://github.com/eltitopera/rancher-catalog
